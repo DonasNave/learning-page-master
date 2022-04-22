@@ -1,0 +1,377 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.page-content {
+  margin-top: 20px !important;
+  min-height: 75vh;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.pagination li .page-link{
+  color: white;
+  background-color: rgb(30, 30, 30);
+  min-width: 40px;
+  text-align: center;
+}
+
+.pagination li .page-link:hover{
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.pagination .page-item.active .page-link{
+  background-color: #E01D1D;
+  border-color: darkred;
+} 
+
+.sc-gsnTZi {
+  text-align: left;
+  margin: 5%;
+  border: 2px solid #282c34;
+}
+
+.download-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basic-listing{
+  text-align: left; 
+  margin-left: 1vw; 
+  margin-top: 2vh
+}
+
+
+@media (min-width:1024px){ 
+  .help-holder{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:1400px){ 
+  .lesson-content .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help-holder {
+    flex-direction: row;
+  }
+
+  .task-holder.col-5 {
+    margin-bottom: 5vh;
+    width: 80%;
+  }
+}
+
+@media (max-width:796px){
+  .bottom-nav .pagination{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.bottom-nav.row {
+  position: sticky; 
+  bottom: 0;
+  margin-top: 5vh;
+  align-items: center;
+  width: fit-content;
+}
+
+.lesson-page {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 86vh;
+}
+
+.card-img-top {
+  height: 25vh;
+}
+
+.preview-card.card {
+  min-height: 350px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.left-ulist {
+  text-align: left; 
+  margin-left:10px
+}
+
+
+#home{
+  color: white;
+  margin-left: 5px;
+  border-radius: 20px;
+  transition: ease-out 0.2s;
+}
+
+#home svg{
+  margin-right: 5px;
+  color: white;  
+}
+
+#home:hover {
+  background-color: #282c34;
+}
+
+#logo {
+  color: white;
+}
+
+#robo {
+  color: #E01D1D;
+  font-weight: 500;
+}
+   
+.accordion .accordion-header button{
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: ease-out 0.3s;
+}
+
+.accordion .accordion-header button:hover{
+  background-color: rgba(0, 0, 0, 0.80);
+  border-left: 10px solid #E01D1D;
+}
+
+.accordion-item .accordion-header button:not(.collapsed){  
+  border-left: 10px solid #E01D1D;
+}
+
+.accordion-button::after{
+  filter: invert(28%) sepia(31%) saturate(4568%) hue-rotate(349deg) brightness(88%) contrast(100%);
+}
+
+.accordion-button:focus{
+  box-shadow: none !important;
+}
+
+.accordion-item .accordion-header{
+  border-radius: 0 !important;
+}
+
+.theory-card {
+  padding: 20px;
+  margin-bottom: 3vh;
+  border: 5px solid black;
+}
+
+.navbar-toggler-icon{
+  filter: invert(28%) sepia(31%) saturate(6568%) hue-rotate(349deg) brightness(98%) contrast(100%);
+  border-color: none;
+}
+
+.bg-dark .navbar-toggler{
+  border: none;
+}
+
+.bg-dark .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.listing-card {
+  padding: 10px;
+  margin-bottom: 3vh;
+  border-top: 10px solid #b31717;
+}
+
+.theory-card h5{
+  color: white;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.header-lists {
+  background-color: #9340ca;
+}
+
+.header-definitions {
+  background-color: #3e89eb;
+}
+
+.header-examples {
+  background-color: #41c076;
+}
+
+.example-card {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  padding-left: 10px;
+  border-left: 5px double black;
+  border-top: 5px solid rgb(35, 121, 64);
+}
+
+.lesson-heading {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.lesson-heading h4{
+  width: fit-content;
+  padding-left: 5px;
+  font-size: 1.6rem;
+  background-color: #E01D1D;
+  padding: 10px;
+  color: white;
+  
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-top: 1px solid #282c34;
+}
+
+.preview-btn.btn-primary{  
+  position: relative;
+  border: none;
+  width: 30%;
+  margin-top: 1vh;
+  top: 0;
+  background-color: #2b9959;
+  transition: ease 0.2s;
+}
+
+.preview-btn.btn-primary:hover{  
+  background-color: white;
+  border-left: 8px solid #E01D1D;
+  border-right: 8px solid #E01D1D;
+  color: #E01D1D;
+  font-weight: 700;
+}
+
+.preview-card.card{  
+  border: none;
+  border-radius: 0; 
+  -webkit-box-shadow: 4px 3px 14px -3px rgba(0,0,0,1);
+  -moz-box-shadow: 4px 3px 14px -3px rgba(0,0,0,1);
+  box-shadow: 4px 3px 14px -3px rgba(0,0,0,1);
+}
+
+.preview-card .card-header{
+  background-color: #282c34;
+  border-radius: 0;
+}
+
+.card-title.h5{
+  background-color: #E01D1D;
+  padding: 5px;
+  color: white;
+}
+
+.std-shadow1{
+  -webkit-box-shadow: 4px 4px 0px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 0px 1px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 0px 1px rgba(0,0,0,0.75);
+}
+
+.std-shadow2{
+  -webkit-box-shadow: 8px 8px 0px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 8px 8px 0px 1px rgba(0,0,0,0.75);
+  box-shadow: 8px 8px 0px 1px rgba(0,0,0,0.75);
+}
+
+.std-shadow5{
+  -webkit-box-shadow: 10px 10px 0px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 0px 5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 0px 5px rgba(0,0,0,0.75);
+}
+
+.std-table td{
+  vertical-align: middle;
+}
+
+.row .square {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  margin-bottom: 15px;
+}
+
+.sq-blue {
+  background-color: #3e89eb;
+}
+
+.sq-green {
+  background-color: #41c076;
+}
+
+.legend {
+  align-items: center;
+  font-size: large;
+  font-weight: 500;
+}
+
+.help-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dw-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+a#upol-link {
+  color: #b31717;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a#upol-link:hover {
+  color: #3e89eb;
+}
