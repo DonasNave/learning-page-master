@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import CodeBlock from "../Components/CodeBlock";
+import CodeBlock from "../Components/Code-Block";
 
 //#region Zdrojové kódy
 const codeLibs = String.raw

@@ -23,11 +23,6 @@ const Menu = ({lessonCal}) => {
               <Nav.Link onClick={(event) => {lessonCal(0)}} id='home'><FontAwesomeIcon icon={faGripVertical} />Seznam lekcí</Nav.Link>        
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text style={{color: "white"}}>
-              <a id="upol-link" href="https://www.upol.cz/">UPOL</a>
-            </Navbar.Text>
-          </Navbar.Collapse>
         </Container>
       </Navbar>)
     }
