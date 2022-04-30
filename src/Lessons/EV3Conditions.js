@@ -56,7 +56,7 @@ využívat 3 <b>speciální bloky</b>, do nichž budeme <b>vkládat dílčí pod
 </Container>;
 
 export const tasksEV3Conditions = [
-    <Container>
+    <div>
     <h5>Posloupnosti</h5>
     <p>Vaším úkolem bude vypsat prvních <b>10 čísel posloupností</b>. Každý člen posloupnosti musí být vypočten pomocí <b>předpisu</b> (je zakázáno pouze 10x vypsat už výslednou hodnotu).</p>
     <p>Jednotlivé členy vypište na displej EV3 na řádky 1-10. Začněte 1. členem posloupnosti a postupujte dále.</p>
@@ -67,22 +67,22 @@ export const tasksEV3Conditions = [
         <li><b>Fibonacciho</b> posloupnost - čísla 0, 1, 1, 2, 3, 5, ... Tato posloupnost začíná členy 0 a 1 a každý další člen se vypočte jako součet předchozích 2 členů.</li>
       </ul>
     </p>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
     <h5>Kód vypnutí bzučáku</h5>
     <p>Úkolem bude vrátit se k programu bzučáku a pomocí nových bloků upravit program. Nově při zadání vámi zvolené kombinace alespoň 3 tlačítek se "alarm" vypne.</p>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
     <h5>Největší společný dělitel</h5>
     <p>Sestrojte program, který provede známý úkon, a to vypočítá <b>největšího společného dělitele</b> dvou čísel. Čísla budou zadána do proměnných přímo v programu a jednotka výsledek vypíše na displej.</p>
     <p>Při počítání budete potřebovat získat zbytek po dělení dvou čísel. Ten získáte pomocí <b>bloku modulo</b> <img src={process.env.PUBLIC_URL + "/images/ev3class/block-modulo.PNG"} alt="Modulo block"></img> (př. takto využitý blok vrátí <b>2</b>, jelikož <span className="nowrap">14 : 4 = 3 zb. 2</span>)</p>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
       <h5>Stopky</h5>
       <p>Sestavte konstrukci <b>podle plánu</b> níže a připojte střední motor do jednotky. Vaším úkolem bude <b>vytvořit akční stopky</b>. Po 
       zmáčknutí <b>prostředního</b> tlačítka začne robot na displeji <b>počítat čas</b>. Zároveň se bude <b>pohybovat ručička</b>.</p>
       <a href={process.env.PUBLIC_URL + "/models/Stopky-model.pdf"} download><Download name={"Model stopek"} /></a>
       <p>Přidejte funkcionalitu tak, aby při dalším zmáčknutí <b>dolního</b> tlačítka se časomíra zastavila (stejně tak i ručička).</p>
       <p>Doplňte program tak, aby po zmáčknutí tlačítka <b>nahoru</b> se měření stopek <b>obnovilo</b>. Doplňte program, aby zmáčknutí prostředního tlačítka stopky <b>resetovalo</b> (zpět na 0) a ručička <b>se vrátila</b> zpět na výchozí pozici.</p>
-    </Container>
+    </div>
   ];

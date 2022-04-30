@@ -130,7 +130,7 @@ export const lessonPythonClasses =
 
 export const tasksPythonClasses = 
 [  
-  <Container>
+  <div>
     <h5>Rozšíření auta</h5>
       <p>Rozšiřte třídu Auto, která je využita v teorii. Vaším úkolem bude do třídy přidat dva atributy: <b>spotreba</b> a <b>palivo</b>. 
         Číselná hodnota <b>spotreba</b> i <b>palivo</b> se bude volit při vytváření instance objektu.</p>
@@ -140,8 +140,8 @@ export const tasksPythonClasses =
       že na základě zadané vzdálenosti spočítá spotřebu paliva. Pokud je paliva dostatek, sníží se o vypočítanou hodnotu a metoda vypíše 
       "Urazilo jsem X km a spotřebovalo Y paliva", kdy X,Y nahradíte správnými hodnotami.</p>
       <p>Pokud paliva není dost, metoda vypíše: "Nelze, ujedu nanejvýš X km", kdy X je maximální dojezd na současné palivo.</p>
-  </Container>,
-  <Container>
+  </div>,
+  <div>
     <h5>Úsečka</h5>
       <p>Vaším úkolem bude vytvořit dvě třídy: <b>Bod</b> a <b>Usecka</b>. <b>Bod</b> bude obsahovat dva atributy <b>poz_x</b> a <b>poz_y</b> reprezentující 
       souřadnice bodu. Tyto atributy budou mít číselnou hodnotu, zvolenou při vytváření instance.</p>
@@ -154,8 +154,8 @@ export const tasksPythonClasses =
     <h6>Změna hodnot</h6>
       <p>Vytvořte setter pro třídu <b>Bod</b> pro oba atributy. Zkuste změnit již existující instanci <b>Bodu</b>, která slouží jako atribut <b>Usecky</b>.</p> 
       <p>Dojde k nějakým změnám na úsečce? Pročpak tomu tak je?</p>
-  </Container>,
-  <Container>
+  </div>,
+  <div>
     <h5>Trojúhelník</h5>
     <p>Zkombinujte třídy z minulého úkolu a vytvořte třídu reprezentující trojúhelník. Vaším úkolem bude v této třídě vytvořit metodu <b>obvod()</b>, která
       vrátí obvod trojúhelníku. Dobře promyslete, jak bude nejvhodnější reprezentovat různé aspekty trojúhelníku.</p>
@@ -163,5 +163,5 @@ export const tasksPythonClasses =
       Následně vytvořte metodu <b>jeTrojuhelnik()</b>, která vrátí hodnotu True pokud pro trojúhelník platí pravidlo, že jeho nejdelší strana je
       kratší, než součet zbylých dvou stran.
     </p>
-    </Container>,
+    </div>,
   ];

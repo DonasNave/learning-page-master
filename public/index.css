@@ -1,4 +1,6 @@
-
+body {
+  min-width: 550px;
+}
 .svgLoader {
     animation: spin 0.7s linear infinite;
     margin: auto;

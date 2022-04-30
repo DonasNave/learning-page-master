@@ -187,7 +187,7 @@ export const lessonPythonIntro =
     </Container>;
 
 export const tasksPythonIntro = [
-    <Container>
+    <div>
         <h5>Funkce signum</h5>
         <p>Vaším úkolem bude vytvořit program, který bude bude vykonávat roli funkce signum. Program vypíše hlášku <span className="nowrap">"Zadejte číslo"</span>, načte
             vstup, který uživatel zadá a poté:</p>
@@ -197,21 +197,21 @@ export const tasksPythonIntro = [
             <li>Pokud je číslo větší než nula, vypíše se hodnota 1</li>
         </ul>
         <p><i>Jelikož vstup z konzole je ve výchozím stavu brán jako text, musíte z něj udělat číslo. To lze pro proměnnou <b>vstup</b> docílit jako <b>int(vstup)</b></i></p>
-    </Container>,    
-    <Container>
+    </div>,    
+    <div>
         <h5>Skládání textu</h5>
         <p>Pro situace, kdy chceme složit text z více hodnot, jako například jiné texty anebo čísla využijeme jednu ze dvou možností:</p>
         <CodeBlock code={codeStringConc}/>
         <p>Vytvořte program, který si vyžádá do konzole zadat <b>jméno</b> a poté na základě vstupního jména provede personalizovaný pozdrav.</p>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
         <h5>Cvičení s textem</h5>
         <p>Text nebo také anglicky <b>String</b> je řetězec znaků. Můžeme jej získat mnoha způsoby:</p>        
         <CodeBlock code={codeStrings}/>
         <p>Pokud chceme v rámci textu hledat konkrétní řetězec:</p>
         <CodeBlock code={codeStrFind}/>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
         <h5>Odstranění přípony</h5>
         <p>Vaším úkolem bude odstranění přípony souboru. Do konzole bude vepsán název souboru.
             Ten bude tvořen písmeny a číslicemi + příponou. Přípona může být např.: <b>.exe, .jpeg, .7z</b>
@@ -223,5 +223,5 @@ export const tasksPythonIntro = [
         Výsledkem této funkce je počet znaků v textu.</p>
         <h6>Bonus</h6>
         <p>Zamyslete se, jak byste zjistili, že v názvu se vyskytuje více než jedna tečka, čistě s pomocí funkce <b>find</b>. Své řešení otestujte.</p>
-    </Container>
+    </div>
   ];

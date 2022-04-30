@@ -15,6 +15,10 @@ import { lessonMicroPythonControl, tasksMicroPythonControl } from "../Lessons/Mi
 
 //#endregion Import lekcí
 
+const sectionFW = ['Základy algoritmizace', 'green'];
+const sectionEV3 = ['Vizuální programování EV3', 'darkslategray'];
+const sectionPyt = ['Programování v Python', 'lightblue'];
+
 export const data = [
     {
       id: 1,
@@ -22,143 +26,95 @@ export const data = [
       image: "/images/previews/Algorithms.png",
       theory: 
         lessonAlgoritmy,
-      tips: [
-        "Do X",
-        "Do Y"
-      ],
+      section: sectionFW,
       goals: tasksAlgoritmy
     },
     {
       id: 2,
       title: "FlowChart procvičování",
       image: "/images/previews/FlowChart.png",
-      description: 
-      "Soubor porkočilých ú.",
       theory: lessonFlowChart,
-      tips: [
-        "Do X",
-        "Do Y"
-      ],
+      section: sectionFW,
       goals: tasksFlowChart
     },
     {
       id: 3,
       title: "Úvod do vizuálního programování v EV3",
-      image: "/images/previews/Classroom-overview.png",
-      description: "",
+      image: "/images/previews/Classroom-overview.png",      
       theory: lessonEV3Intro,
-      tips: [
-        "",
-        ""
-      ],
+      section: sectionEV3,
       goals: tasksEV3Intro
     },
     {
       id: 4,
       title: "Programujeme s jednotkou Brick",
       image: "/images/previews/Brick.png",
-      description: "",
       theory: lessonEV3Brick,
-      tips: [
-        "TestTip",
-        ""
-      ],
+      section: sectionEV3,
       goals: tasksEV3Brick
     },
     {
       id: 5,
       title: "Podmíněný běh kódu a proměnné",
-      image: "/images/previews/TrueFalseDec.png",
-      description: "",
+      image: "/images/previews/TrueFalseDec.png",      
       theory: lessonEV3Conditions,
-      tips: [
-        "",
-        ""
-      ],
+      section: sectionEV3,
       goals: tasksEV3Conditions
     },
      {
       id: 6,
       title: "Vlastní bloky",
-      image: "/images/robot/contact-sensor.png",
-      description: "",
+      image: "/images/robot/contact-sensor.png",     
       theory: lessonEV3MyBlocks,
-      tips: [
-        "",
-        ""
-      ],
+      section: sectionEV3,
       goals: tasksEV3MyBlocks
     },
     {
       id: 7,
       title: "Ovládání robota",
-      image: "/images/previews/driving-base.png",
-      description: "",
+      image: "/images/previews/driving-base.png",      
       theory: lessonEV3Sensors,
-      tips: [
-        "",
-        ""
-      ],
+      section: sectionEV3,
       goals: tasksEV3Sensors
     },
     {
       id: 8,
       title: "Úvod do programování v Pythonu",
-      image: "/images/previews/Comparison.png",
-      description: "",
+      image: "/images/previews/Comparison.png",     
       theory: lessonPythonIntro,
-      tips: [
-        "",
-        ""
-      ],
+      section: sectionPyt,
       goals: tasksPythonIntro
     },
     {
       id: 9,
       title: "Opakování a podmíněný průběh programu",
       image: "/images/previews/Repetition.png",
-      description: "",
       theory: lessonPythonLoops,
-      tips: [
-        "",
-        ""
-      ],
+      section: sectionPyt,
       goals: tasksPythonLoops
     },
     {
       id: 10,
       title: "Třídy a instance",
       image: "/images/previews/Class.png",
-      description: "",
       theory: lessonPythonClasses,
-      tips: [
-        "",
-        ""
-      ],
+      section: sectionPyt,
       goals: tasksPythonClasses
     },
     {
       id: 11,
       title: "Ovládání robota v MicroPython",
       image: "/images/previews/DrivingBase-old.png",
-      description: "",
-      theory: lessonMicroPythonIntro,
-      tips: [
-        "",
-        ""
-      ],
+      theory: lessonMicroPythonIntro,      
+      section: sectionPyt,
       goals: tasksMicroPythonIntro
     },
     {
       id: 12,
       title: "Komplexní úlohy s robotem",
       image: "/images/previews/Python-code.png",
-      description: "",
-      theory: lessonMicroPythonControl,
-      tips: [
-        "",
-        ""
-      ],
+      theory: lessonMicroPythonControl,      
+      section: sectionPyt,
       goals: tasksMicroPythonControl
     },
     ]

@@ -4,16 +4,27 @@ import {data} from '../Data/Previews'
 import Title from './Title-card';
 import Lesson from './Lesson';
 import BottomNav from './Bottom-navigation';
-import Menu from '../Components/Menu'
+import Menu from './Menu'
 
 
 export default function CardHolder() {
-  
+  const [accord, setAccord] = useState(-1);
   const [lesson, setLesson] = useState(0);
   const selectLesson = (number) => {
-    if (number >= 0 && number <= data.length)
+    if (number >= 0 && number <= data.length){    
+      setAccord(-1);
       setLesson(number);
       window.scrollTo(0, 0);
+    }
+  }
+
+  const setAccordion = (number) => {
+    if (number === accord){
+      setAccord(-1);
+    }
+    else{
+      setAccord(number);
+    }
   }
 
   let content;
@@ -29,7 +40,7 @@ export default function CardHolder() {
   else{
     content =  <Container className='lesson-page' >          
                 <Row className="page-content">
-                  <Lesson num={lesson}/>
+                  <Lesson lessonData={data.at(lesson - 1)} accordSetter={setAccordion} accordItem={accord}/>
                 </Row>
                 <Row className="bottom-nav"> 
                   <BottomNav number={lesson} lessonCal={selectLesson} lessons={data}/>

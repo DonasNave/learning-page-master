@@ -13,7 +13,7 @@ export const lessonEV3Sensors = <Container>
   <p>
     Optický senzor dává robotu výstup okolním světle.</p>
     <img src={process.env.PUBLIC_URL + "/images/robot/color-sensor.png"} alt="Color sensor" width={"40%"}></img>
-    <p><img src={process.env.PUBLIC_URL + "/images/ev3class/ico-color.PNG"} alt="Color sensor icon"></img> Poskytuje nám různá data na základě 3 režimů, ve kterých pracuje:
+    <p><img src={process.env.PUBLIC_URL + "/images/ev3class/ico-color.PNG"} alt="Color sensor icon"></img> Poskytuje nám různá data na základě 3 režimů, ve kterých pracuje:</p>
     <ol className="basic-listing">
       <li><b>Color mode</b> – barevný režim, ve kterém senzor umí rozlišovat 7 druhů barev. 
         V barevném režimu pracují bloky, umožňující robotu reagovat na <b>konkrétní barvu</b> ze seznamu. Tento seznam je předem definovaný: <b>žádná barva - 0, černá - 1, modrá - 2, zelená 3, žlutá - 4, červená - 5, bílá - 6, hnědá - 7</b></li>
@@ -22,13 +22,14 @@ export const lessonEV3Sensors = <Container>
       <b> tmavý povrch</b> a naopak <b>vyšší</b> říká, že měřený <b>povrch je světlý</b>.</li>
       <li><b>Ambient light intensity mode</b> – senzor rozeznává intenzitu okolního světla (bez nasvícení).</li>
     </ol>
+    <p>
     V rámci programu jednotlivé <b>režimy</b> senzoru <b>nevybíráme</b>. Avšak bloky, jenž s nimi pracují, mají specifický <b>výstup daný režimem</b>, v kterém senzor pracuje.
-  </p>
+    </p>
 </div>
 </Container>;
 
 export const tasksEV3Sensors = [
-  <Container>
+  <div>
     <h5>Měřič vzdáleností</h5>
     <p>Vašim úkolem je robota využít k <b>měření vzdálenosti</b> mezi <b>dvěma objekty</b>. Je důležité aby oba objekty <b>stáli na zemi a měli rovné hrany</b> (např. stůl, zeď)</p>
     <div className='dw-card'><img src={process.env.PUBLIC_URL + "/images/ev3class/extension-uz.PNG"} alt="Tab UZ extension"></img></div>
@@ -40,13 +41,13 @@ export const tasksEV3Sensors = [
       </ol>
       <p><i>Vymyslete, jak zaznamenat a přepočítat ujetou vzdálenost. V rámci měření nezapomeňte započítat všechny délky, zasahující do tohoto způsobu měření.</i>
       </p>
-  </Container>, 
-    <Container>
+  </div>, 
+    <div>
       <h5>Pohyb podle vodítka</h5>
       <p>Vytvořte program, který umožní robotu se autonomně <b>pohybovat podle vodítka</b>. <b>Vodítko</b> bude představovat <b>souvislý úsek</b> libovolného 
         materiálu <b>černé barvy</b> (například černá páska na podlaze). 
         Robot se tedy bude <b>pohybovat rovně</b>, dokud snímač intenzity bude <b>snímat černou barvu</b> z vodítka. V momentě, kdy robot vodítko <b>ztratí</b>, musí vodítko znovu <b>najít</b>.</p>
       <div className='dw-card'><img src={process.env.PUBLIC_URL + "/images/ev3class/extension-color.PNG"} alt="Tab color extension"></img></div>
       <p>Při hledání vodítka se robot bude muset nějak otáčet. Dejte pozor aby se nechytil na vodítko, podle něhož doposud jel.</p>
-    </Container>  
+    </div>  
   ];

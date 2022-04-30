@@ -1,10 +1,7 @@
 import React from "react"
-import {data} from '../Data/Previews'
 import { Col, Row, Accordion, Container } from "react-bootstrap"
 
-export default function Lesson (num) { 
-    var lessonData = data.at(num.valueOf().num - 1);
-
+const Lesson = ({lessonData, accordItem, accordSetter}) => { 
     return (
     <Container className="container-fluid text-center text-md-left">
         <div className="lesson-heading">
@@ -15,10 +12,10 @@ export default function Lesson (num) {
         <Container fluid className="lesson-content">
             <Row style={{ marginTop: 40 }}>
                 <Col xs={5} className="left-text task-holder">
-                    <Accordion defaultActiveKey={['']} style={{top:"5em", position:"sticky"}}>
+                    <Accordion activeKey={accordItem} style={{top:"5em", position:"sticky"}}>
                         {lessonData.goals.map(goal => (
                             <Accordion.Item key={lessonData.goals.indexOf(goal) + 1} eventKey={lessonData.goals.indexOf(goal)}>
-                            <Accordion.Header>Úloha {lessonData.id}.{lessonData.goals.indexOf(goal) + 1}</Accordion.Header>
+                            <Accordion.Header onClick={(event) => accordSetter(lessonData.goals.indexOf(goal))}>Úloha {lessonData.id}.{lessonData.goals.indexOf(goal) + 1}</Accordion.Header>
                             <Accordion.Body style={{textAlign: 'left', maxHeight:'70vh', overflow:'auto'}}>
                                 {goal}
                             </Accordion.Body>
@@ -38,3 +35,5 @@ export default function Lesson (num) {
         </Container>
     </Container>)
 }
+
+export default Lesson;

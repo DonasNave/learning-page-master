@@ -58,11 +58,11 @@ export const lessonEV3Brick = <Container>
 </Container>;
 
 export const tasksEV3Brick = [ 
-    <Container>
+    <div>
       <h5>Vykreslení za pomocí tlačítek</h5>
       <p>Vytvořte program v EV3, který nám bude <b>zobrazovat na displeji jednotky Brick číslo</b>. To bude ve <b>výchozím stavu 0</b>. <b>Levé tlačítko</b> bude sloužit k <b>snížení hodnoty čísla o 1</b>, <b>pravé naopak k zvýšení o 1</b>.</p>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
       <h5>Bzučák</h5>
       <p>Vaším úkolem bude <b>vytvořit program</b> a <b>rozšířit</b> jednotu <b>Brick</b> tak, aby byla chráněna před odcizení. Pro tento účel 
       budete muset <b>připojit kontaktní</b> sezor k jednotce, dle následujícího plánu:</p>
@@ -78,8 +78,8 @@ export const tasksEV3Brick = [
         </ul>
         Pro <b>vyčkání</b> časového úseku v programu použijte blok:</p>
         <div className='dw-card'><img src={process.env.PUBLIC_URL + "/images/ev3class/block-wait.PNG"} alt="Wait block"/></div>
-    </Container>, 
-    <Container>
+    </div>, 
+    <div>
       <h5>Klavír</h5>
       <p>Vaším úkolem bude sestrojit program, který <b>zahraje</b> lidovou píseň <b>Skákal pes</b>. Pro hraní jednotlivých najdete blok <b>Play beep</b>. V rámci tohoto bloku, můžete zadat číselnou hodnotu, která přestavuje konkrétní notu (s výběrem pomůže interaktivní klavír).</p>
       <p>Noty písně: 
@@ -89,5 +89,5 @@ export const tasksEV3Brick = [
         </ul>
       </p>
       <p>Využijte <b>noty</b> v rozsahu <b>60-72</b>. Pokuste se využít známé prostředky a vytvořit co <b>nejefektivnější program</b>. Ideální program, by měl schopen píseň zahrát také v hluboké (48-60) a vysoké (72-84) tónině, pouze s malou úpravou.</p>
-    </Container>,
+    </div>,
   ];

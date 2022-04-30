@@ -113,7 +113,7 @@ export const lessonMicroPythonIntro =
 
 export const tasksMicroPythonIntro = 
 [
-    <Container>
+    <div>
       <h5>Vstupy a výstupy</h5>
       <p>Vaším úkolem je využití dostupných prostředků a vytvořit program, který provede následující:</p>
       <ol>
@@ -122,8 +122,8 @@ export const tasksMicroPythonIntro =
         <li>Po dobu 2 vteřin se od pozdravu se rozvítí notifikační světlo na oranžovou barvu.</li>
       </ol>
       <CodeBlock code={codeHubs}/>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
      <h5>Známá melodie</h5>
      <p>Pamatujete na melodie písně Skákal pes? Máte za úkol vytvořit program, který zahraje melodii první sloky. Využijte třetinkové noty.
        Nastavte hlasitost reproduktoru na méně než 10%!</p>
@@ -137,8 +137,8 @@ export const tasksMicroPythonIntro =
        zda je zmáčklé konkrétní tlačítko.</p>
      <p><i>O změněné hodnotě nastavení přehrávání melodie, byste měli s každou změnou informovat. Rovněž byste měli kontrolovat, že zvolené 
        hodnoty jsou validní.</i></p>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
       <h5>Jízda na provázku</h5>
       <p>Cílem této úlohy bude vytvořit ovládání pohybu robota. Váš robot by se měl nacházet v <b>modelu</b> Drive Base. Domluvte se se spolusedícím 
         na vzájemné <b>výpujčce</b> kontaktních senzorů. Váš program bude počítat s využitím <b>dvou kontaktních senzorů</b> a bude fungovat následovně:
@@ -157,5 +157,5 @@ export const tasksMicroPythonIntro =
         aby se robot zastavil a otočil zpět, pokud se přiblíží na 20cm k překážce.
       </p>
       <p>K otočení robota využijte <b>třídu</b> DriveBase z dokumentace. K jejímu použití se můžete nechat inspirovat příkladem zmíněným v textu lekce.</p>
-    </Container>  
+    </div>  
 ];

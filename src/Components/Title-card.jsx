@@ -7,7 +7,7 @@ import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 const TCard = ({ data, lessonCal }) => (
   <Col key={data.id}>
-    <Card style={{ minWidth: '12rem' }} className="justify-content-md-center preview-card">
+    <Card className="justify-content-md-center preview-card">
       <Card.Header></Card.Header>
       <Card.Img variant="top" src={process.env.PUBLIC_URL + data.image} style={{maxHeight:'30vh', objectFit: 'cover'}}/>
       <Card.Body>
@@ -16,6 +16,9 @@ const TCard = ({ data, lessonCal }) => (
         </Card.Title>
         <Button onClick={() => lessonCal(data.id)} variant="primary" className='preview-btn'><FontAwesomeIcon icon={faArrowCircleRight} /></Button>
       </Card.Body>
+      <Card.Footer>
+        <small className="text-muted" style={{borderColor: data.section[1]}}>{data.section[0]}</small>
+      </Card.Footer>
     </Card>
   </Col>
 )

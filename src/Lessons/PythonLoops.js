@@ -129,8 +129,7 @@ export const lessonPythonLoops =
 
 export const tasksPythonLoops = 
 [
-  
-    <Container>
+    <div>
       <h5>Výpis čísel</h5>
       <p>Vaším úkolem bude z následujícího listu čísel</p>
       <CodeBlock code={codeNumbers}/>
@@ -141,22 +140,22 @@ export const tasksPythonLoops =
         <li>Všechna lichá čísla.</li>
         <li>Průměrnou hodnotu všech čísel.</li>
       </ol>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
       <h5>Šachovnice</h5>
       <p>Vašim úkolem je vytvořit program, který vypíše <b>všechny možné pozice</b> na <b>šachovnici</b>. Políčka šachovnice jsou vodorovně označeny A..H a vertikálně 1..8, tedy validní pozice jsou A1..H8.</p>
       <div className="dw-card"><img src={process.env.PUBLIC_URL + "/images/help/chess-coordinates.svg"} alt=""></img></div>
       <p>Výpis v konzoli musí odpovídat struktuře šachovnice, tedy pozice se stejným číslem na jednom řádku a nejnižší řádek s číslem 1.</p>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
       <h5>Palindrom</h5>
       <p>Palindrom je slovo, číslo nebo také věta, která se <b>čte stejně "zepředu" i "zezadu"</b> (např. 'ratar', "kobyla ma maly bok"). Vašim úkolem je sestrojit program, který rozpozná, zda-li zadané slovo je palindrom.</p>
       <p>V textu budou ignorovány znaky jako jsou mezery, čárky, tečky a vykřičníky.</p>
       <p>Program vyzkoušejte pro následující <b>List</b> textů a pro každý text vypište, zda se jedná palindrom nebo ne.</p>
       <CodeBlock code={codePalindroms}/>
-    </Container>,
-    <Container>
+    </div>,
+    <div>
       <h5>Největší společný dělitel</h5>
       <p>Vytvořte funkci, která vyřeší známý úkol a to vypočítá největšího společného dělitele dvou čísel. Čísla budou zadána uživatelem v rámci konzole. Po zadání dvou čísel se vypíše výsledek programu.</p>
-    </Container>
+    </div>
   ];
