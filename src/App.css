@@ -123,6 +123,7 @@
 
 .preview-card.card {
   min-height: 350px;
+  max-height: 450px;
   min-width: 12rem;
 }
 
