@@ -43,11 +43,11 @@ export const tasksEV3Sensors = [
       </p>
   </div>, 
     <div>
-      <h5>Pohyb podle vodítka</h5>
-      <p>Vytvořte program, který umožní robotu se autonomně <b>pohybovat podle vodítka</b>. <b>Vodítko</b> bude představovat <b>souvislý úsek</b> libovolného 
-        materiálu <b>černé barvy</b> (například černá páska na podlaze). 
-        Robot se tedy bude <b>pohybovat rovně</b>, dokud snímač intenzity bude <b>snímat černou barvu</b> z vodítka. V momentě, kdy robot vodítko <b>ztratí</b>, musí vodítko znovu <b>najít</b>.</p>
+      <h5>Pohyb v rámci úseku</h5>
+      <p>Vytvořte program, který umožní robotu se autonomně <b>pohybovat ve vyznačené dráze</b>. <b>Dráha</b> bude představovat <b>souvislý úsek</b> libovolného 
+        materiálu <b>černé barvy</b> (například černá páska na podlaze) ve dvou pruzích, dostatečně daleko od sebe.</p>
+      <p>Robot se tedy bude <b>pohybovat rovně</b>, dokud snímač intenzity nezačne <b>snímat černou barvu</b> z vyznačeného kraje. V momentě, kdy robot <b>narazí na krajnici</b>, musí se navrátit zpět do rozmezí vyznačeného úseku. Jak docílit, aby se mu nepovedlo omylem dostat mimo dráhu?</p>
       <div className='dw-card'><img src={process.env.PUBLIC_URL + "/images/ev3class/extension-color.PNG"} alt="Tab color extension"></img></div>
-      <p>Při hledání vodítka se robot bude muset nějak otáčet. Dejte pozor aby se nechytil na vodítko, podle něhož doposud jel.</p>
+      <p>Pro tento úkol budete potřebovat vybavit robota barevným senzorem podle vzoru z modelu <b>Color Sensor Down - Driving Base</b></p>
     </div>  
   ];

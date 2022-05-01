@@ -16,14 +16,14 @@ import { lessonMicroPythonControl, tasksMicroPythonControl } from "../Lessons/Mi
 //#endregion Import lekcí
 
 const sectionFW = ['Základy algoritmizace', 'green'];
-const sectionEV3 = ['Vizuální programování EV3', 'darkslategray'];
+const sectionEV3 = ['Vizuální programování EV3', 'PaleVioletRed'];
 const sectionPyt = ['Programování v Python', 'lightblue'];
 
 export const data = [
     {
       id: 1,
       title: "Algoritmy",
-      image: "/images/previews/Algorithms.png",
+      image: "/images/previews/algorithm.png",
       theory: 
         lessonAlgoritmy,
       section: sectionFW,
@@ -56,7 +56,7 @@ export const data = [
     {
       id: 5,
       title: "Podmíněný běh kódu a proměnné",
-      image: "/images/previews/TrueFalseDec.png",      
+      image: "/images/previews/Intro-5.png",      
       theory: lessonEV3Conditions,
       section: sectionEV3,
       goals: tasksEV3Conditions
@@ -64,7 +64,7 @@ export const data = [
      {
       id: 6,
       title: "Vlastní bloky",
-      image: "/images/robot/contact-sensor.png",     
+      image: "/images/previews/block-custom-def.PNG",     
       theory: lessonEV3MyBlocks,
       section: sectionEV3,
       goals: tasksEV3MyBlocks
