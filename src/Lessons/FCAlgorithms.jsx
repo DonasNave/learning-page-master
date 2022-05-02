@@ -4,9 +4,14 @@ export const lessonAlgoritmy =
     <Container>
         <div className="theory-card std-shadow5">
           <h5 className="header-definitions std-shadow2">Algoritmus</h5>
-          <p>Představuje <b>posloupnost dílčích kroků potřebných pro vyřešení konkrétní úlohy</b>. To znamená, že algoritmem rozumíme nějaký postup, pro vyřešení zadaného problému. Skládá se z <b>jednotlivých kroků</b>, které jsou <b>postupně vykonány</b>. Proto, aby algoritmus mohl <b>vyřešit problém</b>, musí dostat nějaký <b>vstup</b>. Vstupem nazýváme <b>hodnoty, pro které má algoritmus problém vyřešit</b>. 
-          <br></br><i>Například algoritmus, který vypočte obsah kruhu, tedy provede výpočet rovnice <i>π&middot;r<sup>2</sup></i>, potřebuju mít zadaný konkrétní poloměr kruhu.</i>
-          <br></br><b>Krokem rozumíme jednoduchou činnost.</b><i> (Například sečtení dvou čísel, nakreslení úsečky atd.)</i>. <b>Algoritmus</b> může mít v praxi jakoukoli podobu, od úseku komplexního kódu počítačového programu, až po jednoduchý slovní návod na to, jak si uvařit čaj.</p>
+          <p>Představuje <b>posloupnost dílčích kroků potřebných pro vyřešení konkrétní úlohy</b>.</p>
+          <p>To znamená, že algoritmem rozumíme nějaký postup, pro vyřešení zadaného problému. Skládá se z <b>jednotlivých kroků</b>, které jsou <b>postupně 
+            vykonány</b>. Proto, aby algoritmus mohl <b>vyřešit problém</b>, musí dostat nějaký <b>vstup</b>. Vstupem nazýváme <b>hodnoty, pro které má 
+              algoritmus problém vyřešit</b>.</p> 
+
+          <p><i>Například algoritmus, který vypočte obsah kruhu, tedy provede výpočet rovnice <i>π&middot;r<sup>2</sup></i>, potřebuju mít zadaný konkrétní 
+          poloměr kruhu.</i></p>
+          <p><b>Krokem rozumíme jednoduchou činnost.</b><i> (Například sečtení dvou čísel, nakreslení úsečky atd.)</i>. <b>Algoritmus</b> může mít v praxi jakoukoli podobu, od úseku komplexního kódu počítačového programu, až po jednoduchý slovní návod na to, jak si uvařit čaj.</p>
         </div>
         <div className="theory-card std-shadow5">
           <h5 className="header-definitions std-shadow2">Vlastnosti algoritmů</h5> 
