@@ -9,7 +9,6 @@
 * <a href="#development">Vývoj</a>
 * <a href="#nodei">Node.js instalace</a>
 * <a href="#components">Podrobnosti</a>
-* <a href="#libs">Použité knihovny</a>
 
 
 # Webová aplikace RoboKurz
@@ -84,23 +83,5 @@ Webová aplikace se skládá ze dvou zobrazovacích režimů, výpis lekcí a de
 základě vnitřních hodnot zobrazí buďto seznam lekcí nebo obsah konkrétní
 lekce.
 
-<p align="right">(<a href="#top">Nahoru</a>)</p>
-
-## <a name="libs"></a>Použité knihovny NPM (z package)
-
-* @fortawesome/fontawesome-svg-core
-* @fortawesome/free-regular-svg-icons
-* @fortawesome/free-solid-svg-icons
-* @fortawesome/react-fontawesome
-* @testing-library/jest-dom
-* @testing-library/react
-* @testing-library/user-event
-* bootstrap
-* react
-* react-bootstrap
-* react-code-blocks
-* react-dom
-* react-scripts
-* web-vitals
   
 <p align="right">(<a href="#top">Nahoru</a>)</p>
