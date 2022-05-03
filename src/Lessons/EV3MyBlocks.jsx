@@ -18,7 +18,7 @@ export const lessonEV3MyBlocks = <Container>
   <ul className="basic-listing">
     <li>Pojmenovaná hodnota představuje celý list, př. <img src={process.env.PUBLIC_URL + "/images/ev3class/list-val.PNG"} alt="Var of list"></img>Oproti proměnné se liší tmavějším, oranžovým zbarvením.</li>
     <li>Délku <b>listu</b> získáte pomocí bloku <img src={process.env.PUBLIC_URL + "/images/ev3class/list-length.PNG"} alt="Length of list"></img></li>
-    <li><img src={process.env.PUBLIC_URL + "/images/ev3class/list-add.png"} alt="Adding to list"></img> vloží text jablko a hruška do listu ovoce</li>
+    <li><img src={process.env.PUBLIC_URL + "/images/ev3class/list-add.PNG"} alt="Adding to list"></img> vloží text jablko a hruška do listu ovoce</li>
     <li>Pro získání hodnoty z listu na určité pozici (číselné pořadí) <img src={process.env.PUBLIC_URL + "/images/ev3class/list-item.PNG"} alt="Item of list"></img></li>
     <li>Přepsání hodnoty v listu <img src={process.env.PUBLIC_URL + "/images/ev3class/list-replace.PNG"} alt="Replacing value in list"></img></li>
   </ul>
