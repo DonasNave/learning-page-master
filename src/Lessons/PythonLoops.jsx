@@ -144,7 +144,7 @@ export const tasksPythonLoops =
     <div>
       <h5>Šachovnice</h5>
       <p>Vašim úkolem je vytvořit program, který vypíše <b>všechny možné pozice</b> na <b>šachovnici</b>. Políčka šachovnice jsou vodorovně označeny A..H a vertikálně 1..8, tedy validní pozice jsou A1..H8.</p>
-      <div className="dw-card"><img src={process.env.PUBLIC_URL + "/images/help/chess-coordinates.svg"} alt=""></img></div>
+      <div className="dw-card"><img src={process.env.PUBLIC_URL + "/images/help/chess-coordinates.png"} alt=""></img></div>
       <p>Výpis v konzoli musí odpovídat struktuře šachovnice, tedy pozice se stejným číslem na jednom řádku a nejnižší řádek s číslem 1.</p>
     </div>,
     <div>

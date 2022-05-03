@@ -46,7 +46,7 @@ export const tasksEV3Sensors = [
       <h5>Pohyb v rámci úseku</h5>
       <p>Vytvořte program, který umožní robotu se autonomně <b>pohybovat ve vyznačené dráze</b>. <b>Dráha</b> bude představovat <b>souvislý úsek</b> libovolného 
         materiálu <b>černé barvy</b> (například černá páska na podlaze) ve dvou pruzích, dostatečně daleko od sebe.</p>
-      <p>Robot se tedy bude <b>pohybovat rovně</b>, dokud snímač intenzity nezačne <b>snímat černou barvu</b> z vyznačeného kraje. V momentě, kdy robot <b>narazí na krajnici</b>, musí se navrátit zpět do rozmezí vyznačeného úseku. Jak docílit, aby se mu nepovedlo omylem dostat mimo dráhu?</p>
+      <p>Robot se tedy bude <b>pohybovat rovně</b>, dokud snímač intenzity nezačne <b>snímat černou barvu</b> z vyznačeného kraje. V momentě, kdy robot <b>ztratí nit</b>, musí se navrátit zpět do rozmezí vyznačeného úseku. Jak docílit, aby se mu nepovedlo omylem dostat mimo dráhu?</p>
       <div className='dw-card'><img src={process.env.PUBLIC_URL + "/images/ev3class/extension-color.PNG"} alt="Tab color extension"></img></div>
       <p>Pro tento úkol budete potřebovat vybavit robota barevným senzorem podle vzoru z modelu <b>Color Sensor Down - Driving Base</b></p>
     </div>  

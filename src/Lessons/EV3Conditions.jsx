@@ -4,14 +4,12 @@ import Download from "../Components/Download-card";
 export const lessonEV3Conditions = <Container>
 <div className="theory-card std-shadow5">
   <h5 className="header-definitions std-shadow2">Podmíněné konstrukce v EV3</h5>
-<p><b>Standartní situace</b>, která může v programu nastat je <b>podmíněný běh kódu</b>. To znamená, že určitá část programu <b>se vykoná pouze</b> 
-  když <b>je splněná</b> nadefinovaná <b>podmínka</b>. Stejně jako tomu bylo u diagramů FlowChart</p>
-<p><b>Podmíněné konstrukce</b> v prostředí EV3 jsou <b>bloky</b> nacházející se <b>v sekci kontrol</b>. V <b>hlavičce</b> bloku <b>definujeme podmínku</b>, 
-  která v případě, že je splněna, zařídí další spuštění programu dle funkce podmínky.</p>
+  <p><b>Standardní situace</b>, která může v programu nastat je <b>podmíněný běh kódu</b>. To znamená, že určitá část programu <b>se vykoná pouze</b> když <b>je splněná</b> nadefinovaná <b>podmínka</b>. Stejně jako tomu bylo u diagramů FlowChart</p>
+  <p><b>Podmíněné konstrukce</b> v prostředí EV3 jsou <b>bloky</b> nacházející se <b>v sekci kontrol</b>. V <b>hlavičce</b> bloku <b>definujeme podmínku</b>, která v případě, že je splněna, zařídí další spuštění programu dle funkce podmínky.</p>
 </div>
 <div className="theory-card std-shadow5">
   <h5 className="header-examples std-shadow2">Konstrukce s přímou podmínkou</h5>
-<p>Tyto konstrukce mají <b>pevnou podmínku</b> přímo v hlavičce bloku. Definujeme pouze dodatečně <b>vstupní parametr</b>.</p>
+  <p>Tyto konstrukce mají <b>pevnou podmínku</b> přímo v hlavičce bloku. Definujeme pouze dodatečně <b>vstupní parametr</b>.</p>
 <dl>
     <dt><img src={process.env.PUBLIC_URL + "/images/ev3class/block-wait.PNG"} alt="Wait block"></img></dt>
     <dd><b>Zastaví</b> provedení dalších operací ve stacku na <b>zvolené množství sekund</b>.</dd>
@@ -25,7 +23,7 @@ export const lessonEV3Conditions = <Container>
 <div className="theory-card std-shadow5">
   <h5 className="header-examples std-shadow2">Vlastní podmínka</h5>
 <p>Vlastní <b>podmínku</b> vytváříme pomocí spefických bloků, jenž poznáte dle špičatých 
-  zakončení<img src={process.env.PUBLIC_URL + "/images/ev3class/block-condition.PNG"} alt="Condition block"></img> Podmínka popisuje určitou situaci např. zde: jeli proměnná <b>cislo</b> menší 
+  zakončení <img src={process.env.PUBLIC_URL + "/images/ev3class/block-condition.PNG"} alt="Condition block"></img> Podmínka popisuje určitou situaci např. zde: jeli proměnná <b>cislo</b> menší 
   než 100. Výstupem podmínky je hodnota <b>true</b> nebo <b>false</b> podle toho, zda je splněna nebo ne.</p>
 <p><b>Skládání podmínky</b> využíváme v situaci, kdy je průběh našeho programu závislý na <b>více okolnostech</b>. Při skládání podmínek budeme 
 využívat 3 <b>speciální bloky</b>, do nichž budeme <b>vkládat dílčí podmínky</b>:</p>
@@ -70,12 +68,7 @@ export const tasksEV3Conditions = [
     </div>,
     <div>
     <h5>Kód vypnutí bzučáku</h5>
-    <p>Úkolem bude vrátit se k programu bzučáku a pomocí nových bloků upravit program. Nově při zadání vámi zvolené kombinace alespoň 3 tlačítek se "alarm" vypne.</p>
-    </div>,
-    <div>
-    <h5>Největší společný dělitel</h5>
-    <p>Sestrojte program, který provede známý úkon, a to vypočítá <b>největšího společného dělitele</b> dvou čísel. Čísla budou zadána do proměnných přímo v programu a jednotka výsledek vypíše na displej.</p>
-    <p>Při počítání budete potřebovat získat zbytek po dělení dvou čísel. Ten získáte pomocí <b>bloku modulo</b> <img src={process.env.PUBLIC_URL + "/images/ev3class/block-modulo.PNG"} alt="Modulo block"></img> (př. takto využitý blok vrátí <b>2</b>, jelikož <span className="nowrap">14 : 4 = 3 zb. 2</span>)</p>
+    <p>Úkolem bude vrátit se k programu bzučáku a pomocí nových bloků upravit program. Nově <b>při zadání</b> Vámi zvolené <b>kombinace 3</b> vybraných <b>tlačítek</b> se "alarm" vypne. (ukončí se celý program)</p>
     </div>,
     <div>
       <h5>Stopky</h5>

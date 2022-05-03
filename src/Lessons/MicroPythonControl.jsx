@@ -11,6 +11,7 @@ export const lessonMicroPythonControl =
           <h5 className="header-definitions std-shadow2">Programování... a co bude dál</h5>
           <p>Pokud Vás zaujala výuka, existuje spousta možností jak v programování pokračovat ve volném čase. I když zrovna doma nemáte stavebnici
             LEGO MINDSTORMS EV3.</p>
+          <p>Důležité je především vybrat si, co Vás zajímá. Ve světě programování je k dispozici nepřeberné množství zdrojů, návodů a vychytávek. Pokud chcete začít, stačí si jen vybrat, která oblast by Vás mohla zajímat!</p>
         </div>
     </Container>;
 
@@ -38,13 +39,17 @@ export const tasksMicroPythonControl =
       <p>V následující fázi připravte vodítko, které bude představovat souvislý úsek černého značení (nejlépe páska).</p>
       <p>Upravte program robota následovně:</p>
       <ul>
-        <li>Robot neustále jede vpřed</li>
-        <li>Po stisknutí levého nebo pravého kontaktního senzoru (dle úlohy 11.3) robot bude zatáčet vlevo nebo vpravo</li>
+        <li>Robot neustále jede vpřed</li>        
         <li>Robot neustále postupně zrychluje (200-700 °/s)</li>
+        <li>Po stisknutí levého nebo pravého kontaktního senzoru (dle úlohy 11.3) robot bude zatáčet vlevo nebo vpravo (poznámka: robot nepřestává jet vpřed, pouze zrychlí o 200°/s na daném motoru)</li>
         <li>V rámci programu se udržují body v počáteční hodnotě 5000.</li>
-        <li>Pokud robot při jízdě snímá značené vodítko, jede bez problému dál.</li>
-        <li>Pokud se při jízdě vodítko ztratí, spustí se časomíra, která měří dobu, po kterou robot jede mimo vodítko.</li>
-        <li>Za každých 0.1 vteřin mimo vodítko, se odečte rychlost * 0.1 počet bodů.</li>
+        <li>Za každých 0.1 vteřin:
+          <ul>
+            <li>Aktualizuje se výpis bodů</li>
+            <li>Zvýší se rychlost o 1, dokud nebyla dosažena maximální</li>
+            <li>Pokud je robot mimo vodítko, vynásobí se vyměřená časová hodnota (mezi posledním 0.1s cyklem a tímto) získaná ze StopWatch. Vynásobena bude rychlostí robota a vydělena 500.</li>
+          </ul>
+        </li>
         <li>V momentě, kdy robot ztratil body, zastaví se a program končí.</li>
       </ul>
     </div>

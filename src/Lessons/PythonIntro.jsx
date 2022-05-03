@@ -181,8 +181,7 @@ export const lessonPythonIntro =
                 se o využití knihovny <b>sys</b> v ukázkovém příkladu. Tím, že knihovnu použijeme, program se o ni rozšíří. To s sebou přináší chtěnou funkcionalitu,
                 pokud opravdu chceme knihovnu využít. Pokud je nám ale k ničemu, je vhodné ji vůbec nepoužít. Proto není v programovém souboru hned nachystána
                 veškerá funkcionalita (všechny knihovny), ale je na programátorovi použít jen ty knihovny, které jsou opravdu
-                pro program potřeba. A tím ušetřit velikost výsledného programu.</p>
-            <p></p>
+                pro program potřeba.</p>
         </div>
     </Container>;
 

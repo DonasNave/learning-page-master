@@ -4,13 +4,11 @@ import Download from "../Components/Download-card";
 export const lessonEV3Brick = <Container>
 <div className="theory-card std-shadow5">
   <h5 className="header-definitions std-shadow2">Programová konstrukce - blok (stack)</h5>          
-  <p>Nyní si popíšeme a v některých případech připomeneme, s čím jsme se minule seznámili. <b>Programový stack</b> je <b>seskupení</b> 
-  jednotlivých <b>funkčních bloků</b>. Vždy <b>začíná</b> specifickým <b>událostním blokem</b>, na jehož základě se <b>spouští</b> 
-  (připomíná krajní puzzle).</p>  
+  <p>Nyní si popíšeme a v některých případech připomeneme, s čím jsme se minule seznámili. <b>Programový stack</b> je <b>seskupení</b> jednotlivých <b>funkčních bloků</b>. Vždy <b>začíná</b> specifickým <b>událostním blokem</b>, na jehož základě se <b>spouští</b> (připomíná krajní puzzle).</p>  
   <div className='dw-card'><img src={process.env.PUBLIC_URL + "/images/ev3class/block-start.PNG"} alt="Start block"></img></div>
   <p>V ukázce je uveden blok, který se spustí <b>při zapnutí programu</b>, ale jsou k dispozici bloky s <b>různými</b> podmínkami spuštění. 
   Všechny startovní bloky najdeme v kategorii <b>Events</b>.</p>
-  <p><b>Vykonávání bloků</b> ve stacku poté probíhá <b>lineárně</b> shora dolů. <b>Posledním</b> blokem ve stacku by měl být <b>ukončovací blok</b>.
+  <p><b>Vykonávání bloků</b> ve stacku poté probíhá <b>lineárně</b> shora dolů. Program běžně končí <b>posledním</b> blokem ve stacku. Může však být přerušen předčasně pomocí <b>ukončovacího bloku</b>.
    <img src={process.env.PUBLIC_URL + "/images/ev3class/Block-end.PNG"} alt="End block"></img> V rámci ukončovacího bloku můžeme zvolit, zda chceme ukončit tento konkrétní stack, všechny ostatní nebo celý program.</p>
 </div>
 <div className="theory-card std-shadow5">
@@ -24,13 +22,13 @@ export const lessonEV3Brick = <Container>
     <dt><span class="dot" style={{backgroundColor: "#f5c400"}}></span>Události (Events)</dt>
     <dd>Spouštějí programový stack na základě specifické události. Součástí jsou také bloky pro zasílání zpráv.</dd>
     <dt><span class="dot" style={{backgroundColor: "#935df5"}}></span>Zobrazení (Display)</dt>
-    <dd>Pracují s displejem kontrolní jednotky EV3 Brick. Umožňují sdílet informace v průběhu programu. Příklad operací: rozsvícení kontrolního světla ve zvolené barvě, výpis textu na řádek,… </dd>
+    <dd>Pracují s displejem kontrolní jednotky EV3 Brick. Umožňují sdílet informace v průběhu programu.</dd>
     <dt><span class="dot" style={{backgroundColor: "#bf70e7"}}></span>Zvuky (Sound)</dt>
-    <dd>Obdobně jak bloky zobrazení. Vhodné pro sdělení jednoduché informace, případně pro výukové účely. Příklad operací: spušťení/zastavení zvoleného zvuku, nastavení hlasitosti,… </dd>
+    <dd>Obdobně jak bloky zobrazení. Vhodné pro sdělení jednoduché informace, případně pro výukové účely.</dd>
     <dt><span class="dot" style={{backgroundColor: "#ffb515"}}></span>Dohled (Control)</dt>
     <dd>Korigují průběh programu podmíněným vykonáváním kódu. Mohou obsahovat vlastní podmínku, případně slot na podmíněný programový blok.</dd>
     <dt><span class="dot" style={{backgroundColor: "#00b94d"}}></span>Operátory (Operators)</dt>
-    <dd>Korigují průběh programu podmíněným vykonáváním kódu. Mohou obsahovat vlastní podmínku, případně slot na podmíněný programový blok.</dd>
+    <dd>Slouží k vykonání matematematických a logickým operací. Jejich výsledkem je hodnota, buď pravdivostní v případě logických bloků (hranaté) nebo číselná popřípadě textová (zaoblené).</dd>
   </dl>            
 </div>
 <div className="theory-card std-shadow5">
