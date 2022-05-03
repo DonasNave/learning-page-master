@@ -57,7 +57,7 @@ V násleudjící části jsou zmíněny postupy instalace a nasazení webu.
    npm install
    ```
 3. V rámci souboru `package.json` zvolte za objekt `homepage` vybranou hodnotu, kterou představuje cesta k adresáři s webovou aplikací na Vašem serveru
-   ```json
+   ```sh
    homepage: '#Vaše_cesta#';
    ```
 4. V terminálu repositáře aplikace spustťe následující příkaz
