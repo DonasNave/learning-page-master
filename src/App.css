@@ -90,6 +90,10 @@
     margin-bottom: 5vh;
     width: 80%;
   }
+  
+  img.resize {
+    width: 100%;
+  }
 }
 
 @media (max-width:796px){

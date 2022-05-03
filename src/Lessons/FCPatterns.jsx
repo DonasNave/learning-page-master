@@ -4,7 +4,7 @@ export const lessonFlowChart = <Container>
 <div className="theory-card std-shadow5">
   <h5 className="header-examples std-shadow2">Opakování</h5>
   <p>V rámci algoritmu někdy nastanou situace, kdy potřebujeme <b>část kódu zopakovat</b> v určitém <b>počtu opakování</b>. Pro tyto situace se využívají tzv. <b>cykly</b>. Ty mají moho podob v různých stylech zápisu algoritmu, obzlášť tedy <b>v programovacích jazycích</b>. V těch, kvůli svému <b>častému využití</b>, mají <b>zjednodušený zápis</b>. Ve <b>FlowChart</b> si ale pro konkrétní počet opakování můžeme vystačit například s takovýmto diagramem.</p>
-  <img src={process.env.PUBLIC_URL + "/images/flowchart/Example-cycle.png"} alt="" width={"100%"}></img>
+  <img src={process.env.PUBLIC_URL + "/images/flowchart/Example-cycle.png"} alt="" className="resize"></img>
 </div>
 <div className="theory-card std-shadow5">
   <h5 className="header-definitions std-shadow2">Pole</h5>
@@ -18,12 +18,12 @@ export const lessonFlowChart = <Container>
 <div className="theory-card std-shadow5">
   <h5 className="header-examples std-shadow2">True a false</h5>
 <p>V rámci zápisu algoritmů jsme doteď v rozhodovacích blocích používají slovní odpověď ANO/NE. Nicméně abychom dodržovali určitý standart, který nám pak pomůže při programování, přejdeme na nové hodnoty. Ty vychází z anglických výrazů pravda <b>true</b> a lež <b>false</b>. Tedy když se teď budeme rozhodovat tak (viz obrázek) nově použijeme <b>true</b> namísto <b>ANO</b> a <b>false</b> místo <b>NE</b></p>
-<img src={process.env.PUBLIC_URL + "/images/flowchart/TrueFalseDec.png"} alt="" width={"70%"}></img>
+<img src={process.env.PUBLIC_URL + "/images/flowchart/TrueFalseDec.png"} alt="" ></img>
 </div>
 <div className="theory-card std-shadow5">
   <h5 className="header-examples std-shadow2">Navázání diagramu v jiném místě</h5>
   <p>V neposlední řadě si zpříjemníme zápis komplexních diagramů. Pokd nám v určité části diagramu dojde list, můžeme použít obrazec pro přesměrování. Tím je kolečko označené velkým písmenem. Nejenže nám to umožňí konstruovat rozsáhlejší diagram, můžeme pomocí logického rozdělení diagramu získat znovupoužitelné části.</p>
-  <img src={process.env.PUBLIC_URL + "/images/flowchart/DiagConnection.png"} alt="" width={"100%"}></img>
+  <img src={process.env.PUBLIC_URL + "/images/flowchart/DiagConnection.png"} alt="" className="resize"></img>
 </div>
 </Container>;
 

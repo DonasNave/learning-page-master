@@ -81,14 +81,14 @@ export const lessonEV3Intro = <Container>
 export const tasksEV3Intro = [
     <div>
       <h5>Oprava programu</h5>
-      <p>Následující program nefunguje úplně dobře, Vaším úkolem je opravit jej. Při stisknutí zvoleného tlačítka (nahoru, vlevo, vpravo), by měl Brick na 2 sekundy zobrazit správně nasměřované oči a poté pro jistotu vypsat směr.</p>
+      <p>Následující program nefunguje úplně dobře, Vaším úkolem je opravit jej. Při stisknutí zvoleného tlačítka (nahoru, vlevo, vpravo), by měl Brick na 2 sekundy zobrazit správně nasměrované oči a poté pro jistotu vypsat směr.</p>
       <div className="dw-card"><a href={process.env.PUBLIC_URL + "/program_files/Ukol 3-1.lmsp"} download><Download name={"Program 3.1"} /></a></div>
     </div>,       
     <div>
       <h5>Robotické rameno</h5>         
       <p>Sestavte podle rameno podle návodu. Vaším úkolem bude po sestavení zapojit <b>velký servomotor</b> do portu <b>A</b> a <b>střední servomotor</b> do portu <b>B</b>.</p>
       <div className="dw-card"><a href={process.env.PUBLIC_URL + "/models/Rameno-model.pdf"} download><Download name={"Model ramene"} /></a></div>
-      <p>V následující části úlohy vytvoříte program pro robotické rameno. Základem tohoto programu bude program z úlohy 3.1. Po zmáčknutí příslušného tlačítka se otočí jeden z motorů v takovém směru, aby rameno kopírovalo směr zmákčnutého tlačítka.</p>
+      <p>V následující části úlohy vytvoříte program pro robotické rameno. Základem tohoto programu bude program z úlohy 3.1. Po zmáčknutí příslušného tlačítka se otočí jeden z motorů v takovém směru, aby rameno kopírovalo směr zmáčknutého tlačítka.</p>
       <p>V poslední části budeme chtít využít prostřední tlačítko. K práci s motory máme k dispozici také oválný blok... představující hodnotu (stupně), o které se daný motor otočil. Po zmáčknutí prostředního tlačítka program provede vrácení motorů do výchozí pozice.</p>
     </div>
     

@@ -8,10 +8,10 @@ export const lessonAlgoritmy =
           <p>To znamená, že algoritmem rozumíme nějaký postup, pro vyřešení zadaného problému. Skládá se z <b>jednotlivých kroků</b>, které jsou <b>postupně 
             vykonány</b>. Proto, aby algoritmus mohl <b>vyřešit problém</b>, musí dostat nějaký <b>vstup</b>. Vstupem nazýváme <b>hodnoty, pro které má 
               algoritmus problém vyřešit</b>.</p> 
-
-          <p><i>Například algoritmus, který vypočte obsah kruhu, tedy provede výpočet rovnice <i>π&middot;r<sup>2</sup></i>, potřebuju mít zadaný konkrétní 
+          <p><i>Například algoritmus, který vypočte obsah kruhu, tedy provede výpočet rovnice <i>π&middot;r<sup>2</sup></i>, potřebuje mít zadaný konkrétní 
           poloměr kruhu.</i></p>
-          <p><b>Krokem rozumíme jednoduchou činnost.</b><i> (Například sečtení dvou čísel, nakreslení úsečky atd.)</i>. <b>Algoritmus</b> může mít v praxi jakoukoli podobu, od úseku komplexního kódu počítačového programu, až po jednoduchý slovní návod na to, jak si uvařit čaj.</p>
+          <p><b>Krokem rozumíme jednoduchou činnost.</b><i> (Například sečtení dvou čísel, uložení hodnoty, nakreslení úsečky atp.)</i>.</p>
+          <p><b>Algoritmus</b> může mít v praxi jakoukoli podobu, od úseku komplexního kódu počítačového programu, až po jednoduchý slovní návod na to, jak si uvařit čaj.</p>
         </div>
         <div className="theory-card std-shadow5">
           <h5 className="header-definitions std-shadow2">Vlastnosti algoritmů</h5> 
@@ -87,44 +87,69 @@ export const lessonAlgoritmy =
         <div className="theory-card std-shadow5">
         <h5 className="header-definitions std-shadow2">Standart zápisu algoritmu</h5>
           <p>V rámci ukázkového diagramu jste si rovněž mohli všimnout různých způsobu zápisu konkrétní logiky algoritmu. Jedná se o standart, který budeme dodržovat. Díky tomu zajistíme čitelnost a přehlednost diagramu.</p>
-          <ul style={{textAlign:"left", marginLeft:10}}>
-            <li><b>Činnost (FUNKCE)</b> - Pokyn programu. Musí se jednat o jednoduchou činnost, tedy mělo by se jednat o zřejmý krok. Zapíšeme velkými písmeny název dané činnosti 
-                <br></br><i>Například: VYPIŠ, VYTVOŘ, PŘIČTI</i></li>
-            <li><b>Proměnná</b> - Slouží k uložení hodnoty v algoritmu. Tímto způsobem budeme udržovat data k dalšímu použití. Zapíšeme malými písmeny, pro název proměnné využijeme stručný avšak dostatečně zřejmý popis hodnoty, která v ní bude uložena. Pokud potřebujeme víceslovný název, jednotlivé slova oddělíme poddržítkem.
-                <br></br><i>Například: objednávka, cena, slavnostní_čepice</i></li>
-            <li><b>Přiřazení</b> - Znaménko přiřazení <b>'='</b>, pomocí kterého v algoritmu uložíme hodnotu do proměnné. Proměnnou zapíšeme na levé straně od znaménka a hodnota k uložení napravo.
-                <br></br><i>Například: nazev = "Těžká váha", nebo také v ukázce: odpoved = tip (v tomto případě ukládáme hodnotu z proměnné tip, do proměnné odpoved)</i></li>
-            <li><b>Porovnání</b> - Porovnání dvou hodnot se stejně jako v matematice dělí na jednotlivé varianty. Při porovnávání pomocí znamének: <b>'&lt;' '&lt;=' '&gt;' '=&gt;'</b> je zápis stejný jako v matematice. Avšak jinak zapisujeme rovnost, tedy že se dvě hodnoty rovnají. Pro rovnost použijeme dvojitého rovnítka, tedy <b>'=='</b>. Jiný zápis má také nerovnost dvou hodnot. Tu zapíšeme zapisujeme nerovnost a to <b>!=</b> <br></br>
-            <i>Například: zápis <b>cena == 200</b> říká, že hodnota uložená v proměnné cena je 200. Což může být pravda, ale také nemusí.</i></li>
-            <li><b>Matematické znaménka</b> - pro metametické operace používáme znanémka: <b>'+'</b> pro součet, <b>'-'</b> odčítání, <b>'*'</b> násobení a <b>'/'</b> dělení. Speciálním případem bude znaménko <b>'%'</b> tzv. modulo, které nám vrátí zbytek po dělení (např. 3 % 2 = 1; 13 % 5 = 3)</li>
-          </ul>
+          <dl style={{ marginLeft:10}}>
+            <dt>Činnost (FUNKCE)</dt>
+            <dd>Pokyn programu. Musí se jednat o jednoduchou činnost, tedy mělo by se jednat o zřejmý krok. Zapíšeme velkými písmeny název dané činnosti 
+                <br></br><i>Například: VYPIŠ, VYTVOŘ, PŘIČTI</i></dd>
+
+            <dt>Proměnná</dt> 
+            <dd>Slouží k uložení hodnoty v algoritmu. Tímto způsobem budeme udržovat data k dalšímu použití. Zapíšeme malými písmeny, pro název proměnné využijeme stručný avšak dostatečně zřejmý popis hodnoty, která v ní bude uložena. Pokud potřebujeme víceslovný název, jednotlivé slova oddělíme poddržítkem.
+                <br></br><i>Například: objednávka, cena, slavnostní_čepice</i></dd>
+
+            <dt>Přiřazení</dt>
+            <dd>Znaménko přiřazení <b>'='</b>, pomocí kterého v algoritmu uložíme hodnotu do proměnné. Proměnnou zapíšeme na levé straně od znaménka a hodnota k    uložení napravo. <br></br><i>Například: nazev = "Těžká váha"</i></dd>
+
+            <dt>Porovnání</dt>
+            <dd>Porovnání dvou hodnot se stejně jako v matematice dělí na jednotlivé varianty. Při porovnávání pomocí znamének: <b>'&lt;' '&lt;=' '&gt;' '=&gt;'</b> je zápis stejný jako v matematice. Avšak jinak zapisujeme rovnost, tedy že se dvě hodnoty rovnají. Pro rovnost použijeme dvojitého rovnítka, tedy <b>'=='</b>. Jiný zápis má také nerovnost dvou hodnot. Tu zapíšeme zapisujeme nerovnost a to <b>!=</b> <br></br>
+            <i>Například: zápis <b>cena == 200</b> říká, že hodnota uložená v proměnné cena se rovná 200. Což může být pravda, ale také nemusí.</i></dd>
+
+            <dt>Matematické znaménka</dt>
+            <dd>Pro metametické operace používáme znanémka: <b>'+'</b> pro součet, <b>'-'</b> odčítání, <b>'*'</b> násobení a <b>'/'</b> dělení. Speciálním případem bude znaménko <b>'%'</b> tzv. modulo, které nám vrátí zbytek po dělení (např. 3 % 2 = 1; 13 % 5 = 3)</dd>
+          </dl>
         </div>             
       </Container>;
 
 export const tasksAlgoritmy = [
     <div>
-      <h5>První jednoduchý diagram</h5>
-      <p>Vytvořte pro následující zadání FlowChart diagramy. Diagramy budou pospisovat algoritmy řešící jednotlivé problémy.</p>      
+      <h5>Oprava počítače</h5>
+      <p><i>Utvořte diagram FlowChart dle zadání:</i></p>
+      <p>Máte zapsat, jak probíhá běžná oprava počítače. Ta má následující průběh:</p>
+      <ul>
+        <li>Pokud počítač pracuje správně, konec opravy.</li>
+        <li>Když ne, počítač bude restartován.</li>
+        <li>Pokud byl problém vyřešen, vypíše se hláška "opraveno", pokud ne vypíše se "nelze vyřešit"</li>
+      </ul> 
     </div>,
     <div>
-      <h5>Opakování</h5>
-      <p>Vytvořte pro následující zadání FlowChart diagramy. Diagramy budou pospisovat algoritmy řešící jednotlivé problémy.</p>      
+      <h5>Buzení</h5>
+      <p><i>Utvořte diagram FlowChart dle zadání:</i></p>
+      <p>Vytvořte algoritmus popisující ranní buzení. Algoritmus začíná zvoněním budíku. Následně reaguje na to, zda majitel budíku chce vstávat nebo ne. Pokud má v úmyslu vstávat, budík se vypne. Když ne, vyčká 9 minut a pak pokračuje stejným způsobem, jako při prvním zvonění.</p>      
     </div>,
     <div>
       <h5>Příprava na počasí</h5>
       <p><i>Utvořte diagram FlowChart dle zadání:</i></p>
-      <p>Tereza se rozhoduje, jak se připraví na cestu ven. Nejdříve se podívá, jak venku je. Pokud je venku hezky, chce si vzít sluneční brýle. 
-        Pokud venku prší vezme si deštník. Ale pokud   škaredě, ale neprší, vezme si pro každý případ brýle i deštník.</p>
+      <p>Tereza se rozhoduje, jak se připraví na cestu ven. Nejdříve se podívá, jak venku je. Pokud je venku svítí slunce, chce si vzít sluneční brýle. 
+        Pokud venku prší vezme si deštník. Ale pokud nesvítí slunce a zároveň neprší, vezme si pro každý případ brýle i deštník.</p>
     </div>,    
     <div>
-      <h5>Rozšíření objednávky</h5>
-      <p>Vraťte se k ukázkovému diagramu. Pouhé slovo výhra není dostatečnou motivací. Upravte diagram tak, aby v případě výhry vydal určitou částku. Pro zajímavost můžete vymyslet systém, který výherní částku upraví dle toho, jaké číslo bylo výherní.</p>
+      <h5>Rozšíření objednávky</h5>      
+      <p><i>Utvořte diagram FlowChart dle zadání:</i></p>
+      <p>Vraťte se k ukázkovému diagramu. Rozveďte fázi platby předem. Po tom, co se platba provede, proběhne kontrola, za nastal problém s platbou:</p>
+      <ul>
+        <li>
+          Pokud ano, zapíše se chyba do protokolu a vypíše se hláška, nastala chyba. Následně se může zákazník pokusit provést platbu znova. Pokud se nerozhodne platit znova, vytváření objednávky končí.
+        </li>
+        <li>
+          Pokud nedojde k problému při platbě, vypíše se "platba přijata" a vytvoří se objednávka.
+        </li>
+      </ul>
     </div>,
     <div>
-      <h5>Největší společný dělitel</h5>
+      <h5>Největší společný dělitel</h5>      
+      <p><i>Utvořte diagram FlowChart dle zadání:</i></p>
       <p>Utvořte diagram euklidovského algoritmu na výpočet GCD (největšího společného dělitele) dvou zadaných čísel.</p>
       <p>Algoritmus funguje tak, že:</p>
-      <ol style={{textAlign:"left", marginLeft:10, marginTop:"2vh"}}>
+      <ol style={{textAlign:"left"}}>
         <li>Vezmeme dvě zadaná čísla a <b>vydělíme větší číslo menším</b></li>
         <li>Pokud <b>nezůstává zbytek</b> po dělení, největší společný násobek je <b>dělitel</b></li>
         <li>Pokud <b>zbytek</b> po dělení <b>zůstane</b>, pokračujeme krokem <b>1</b> a <b>nová dvojice</b> sestává z <b>dělitele</b> a <b>výsledku</b></li>
